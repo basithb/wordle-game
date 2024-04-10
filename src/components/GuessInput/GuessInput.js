@@ -19,6 +19,7 @@ function GuessInput() {
           id="guess-input"
           type="text"
           value={guessText}
+          pattern="\w{5,5}"
           onChange={(event) => setGuessText(event.target.value.toUpperCase())}
         />
       </form>

@@ -1,10 +1,10 @@
 import React from "react";
 
-function PreviousGuess({ guessTextArray }) {
+function GuessResults({ guessTextArray }) {
   return (
     <div className="guess-results">
       {guessTextArray.map((guess) => (
-        <p className="guess" key={crypto.randomUUID()}>
+        <p key={crypto.randomUUID()} className="guess">
           {guess}
         </p>
       ))}
@@ -12,4 +12,4 @@ function PreviousGuess({ guessTextArray }) {
   );
 }
 
-export default PreviousGuess;
+export default GuessResults;
